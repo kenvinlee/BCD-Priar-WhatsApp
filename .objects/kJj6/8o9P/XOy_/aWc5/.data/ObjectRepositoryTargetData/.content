@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="4BxSCuR-bUaiRafHVp029A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="pclpls.com/Auth/Login.aspx" CVScreenId="8b196f18-d138-4563-9189-a4171bc1d0cd" CvElementArea="286, 782, 62, 23" CvTextArea="297, 787, 38, 15" CvTextArgument="Log in" CvType="Button" DesignTimeRectangle="288, 784, 59, 20" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='5' tag='TABLE' /&gt;&lt;webctrl tableRow='6' tag='IMG' /&gt;" Guid="8b5b3faa-e7b9-416e-80f2-44dea1ea9b27" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PCL Plasma - Login' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="8b196f18-d138-4563-9189-a4171bc1d0cd" CvTextArea="239, 809, 108, 12" CvTextArgument="Reset your Password" CvType="Text" DesignTimeRectangle="240, 808, 107, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='ForgottonPasswordLinkButton' type='' tag='A' class='BlackContentLink' aaname='Reset your Password' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Reset your Password' /&gt;" Guid="053bfbab-3705-48ea-9e4e-36b16d86dc97" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e8d60836bebafac106f3d921eb4ecf70.png" xmlns="">0rE1bQTUCxUynKfMI7Qz8Pg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

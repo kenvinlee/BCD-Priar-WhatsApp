@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="zVM34V5aiEilZcoGOSJelQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="pclpls.com/Reports/DefaultReport.aspx" CVScreenId="d5b568e6-0561-4125-99fc-4c4acbcfa968" CvTextArea="1165, 485, 54, 10" CvTextArgument="Save to Expel" CvType="Text" DesignTimeRectangle="1166, 485, 53, 11" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl idx='3' parentid='ContentPanel' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='DefaultReportDataControl_ReportsPrintSaveMenuControl_SaveToExcelHyperLink' tableRow='1' tag='A' /&gt;" Guid="8dc053c0-26f3-463e-a145-28dce57bdc59" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PCL Plasma - Reports - Default Report' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="d5b568e6-0561-4125-99fc-4c4acbcfa968" CvElementArea="1151, 437, 66, 23" CvTextArea="1161, 442, 46, 12" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="1153, 439, 63, 20" ElementType="Icon" FullSelectorArgument="&lt;webctrl idx='2' parentid='ContentPanel' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='IMG' /&gt;" Guid="895a206c-e136-4516-a571-4ff91b8be15b" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9d4dc1b76b8489ccbdb4a09a284037fc.png" xmlns="">0IuDZzy5Tuk6NwQryaJk4uA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

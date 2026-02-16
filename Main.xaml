@@ -1,0 +1,333 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Platform</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1755,2776" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="upr:IResource" Name="DefaultsReportCSV" />
+      <Variable x:TypeArguments="x:String" Name="PCLUsername" />
+      <Variable x:TypeArguments="ss:SecureString" Name="PCLPassword" />
+      <Variable x:TypeArguments="si:FileInfo" Name="PCLDefaultsReport" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="PCLCredentials" CacheStrategy="None" DisplayName="Get Credential" FolderPath="Alix Folder" sap:VirtualizedContainerService.HintSize="552,176" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[PCLPassword]" Username="[PCLUsername]" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Get PCL Defaults Report" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="552,2577" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="991ea312-ae96-4ac2-aa0d-648a41641d80" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="518,2336" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign in with PLaSMA Use…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484,227" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="991ea312-ae96-4ac2-aa0d-648a41641d80" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="pclpls.com/Auth/MFALogin.aspx" CVScreenId="2f651114-9c00-4e95-b070-275d87e52cf2" ContentHash="iiqh3bKlUUqHMVBHOGKDSw" CvElementArea="792, 449, 353, 34" CvTextArea="876, 459, 183, 16" CvTextArgument="Sign in with PLaSMA User ID" CvType="Button" DesignTimeRectangle="793, 451, 350, 31" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='btnPlasmaLogin' tag='A' /&gt;" Guid="41a14a36-3012-4cac-a17b-8a2ccc9e0291" InformativeScreenshot="272062b1895fdca1f08bb628419855ec.png" Reference="PVqMZiPBo06dWQNQBpVvFw/FxXYFqI58kK6MzPl1w5LEg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='pclpls.com/Auth/MFALogin.aspx?ReturnUrl=%2fdefault.aspx' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="2f651114-9c00-4e95-b070-275d87e52cf2" CvTextArea="791, 353, 244, 23" CvTextArgument="Welcome to PLaSMA" CvType="Text" DesignTimeRectangle="793, 351, 350, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='' aaname='Welcome to PLaSMA' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Welcome to PLaSMA' /&gt;" Guid="23246374-99e9-493b-b8b3-d3de22c74b4b" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'User ID'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484,288" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="991ea312-ae96-4ac2-aa0d-648a41641d80" Text="[PCLUsername]" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="pclpls.com/Auth/Login.aspx" CVScreenId="76f46ed7-0822-4eae-b321-37cfc43db929" ContentHash="8mLP6ju3LUOdMEf2HZqTCQ" CvElementArea="128, 690, 220, 27" CvType="InputBox" DesignTimeRectangle="130, 692, 217, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='UserNameTextBox' type='text' tag='INPUT' class='' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="2495cd82-08ef-44c5-8ed7-04e1f654edde" InformativeScreenshot="c97006cbe415fe88e9e4318ef470e4a9.png" IsResponsive="True" Reference="PVqMZiPBo06dWQNQBpVvFw/WaX_zYs3qkWLJAZDV5vaGg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PCL Plasma - Login' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="76f46ed7-0822-4eae-b321-37cfc43db929" CvTextArea="129, 675, 44, 12" CvTextArgument="User ID:" CvType="Text" DesignTimeRectangle="130, 674, 43, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='UserNameLabel' type='' tag='SPAN' class='' aaname='User ID:' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='User ID:' /&gt;" Guid="28ee2376-72be-451c-9df2-b46be44dc939" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484,288" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="991ea312-ae96-4ac2-aa0d-648a41641d80" SecureText="[PCLPassword]" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="pclpls.com/Auth/Login.aspx" CVScreenId="76f46ed7-0822-4eae-b321-37cfc43db929" ContentHash="GPid7U3ZX0CNapxg5M1VAA" CvElementArea="127, 736, 221, 26" CvType="InputBox" DesignTimeRectangle="130, 738, 217, 24" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='PasswordTextBox' type='password' tag='INPUT' class='' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="29b7aa4e-c5a6-4a95-afdd-f31819b02b1b" InformativeScreenshot="e032658532814291294bfb4b136295e3.png" Reference="PVqMZiPBo06dWQNQBpVvFw/PCILV12FhEyY-s-X_gLQKQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PCL Plasma - Login' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="76f46ed7-0822-4eae-b321-37cfc43db929" CvTextArea="129, 720, 54, 13" CvTextArgument="Password:" CvType="Text" DesignTimeRectangle="130, 720, 52, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='PasswordLabel' type='' tag='SPAN' class='' aaname='Password:' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Password:' /&gt;" Guid="422e5f63-ba87-4a79-8b67-ddde13530e5b" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="10" DisplayName="Click 'Log In'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484,227" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="991ea312-ae96-4ac2-aa0d-648a41641d80" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="pclpls.com/Auth/Login.aspx" CVScreenId="8b196f18-d138-4563-9189-a4171bc1d0cd" ContentHash="4BxSCuR-bUaiRafHVp029A" CvElementArea="286, 782, 62, 23" CvTextArea="297, 787, 38, 15" CvTextArgument="Log in" CvType="Button" DesignTimeRectangle="288, 784, 59, 20" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='5' tag='TABLE' /&gt;&lt;webctrl tableRow='6' tag='IMG' /&gt;" Guid="8b5b3faa-e7b9-416e-80f2-44dea1ea9b27" InformativeScreenshot="e8d60836bebafac106f3d921eb4ecf70.png" Reference="PVqMZiPBo06dWQNQBpVvFw/aWc5BdeZ0kiSXGTZhMU85Q" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PCL Plasma - Login' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="8b196f18-d138-4563-9189-a4171bc1d0cd" CvTextArea="239, 809, 108, 12" CvTextArgument="Reset your Password" CvType="Text" DesignTimeRectangle="240, 808, 107, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='ForgottonPasswordLinkButton' type='' tag='A' class='BlackContentLink' aaname='Reset your Password' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Reset your Password' /&gt;" Guid="053bfbab-3705-48ea-9e4e-36b16d86dc97" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Reports'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484,227" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="991ea312-ae96-4ac2-aa0d-648a41641d80" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="pclpls.com" CVScreenId="be41762a-4053-4939-930b-066205ad9ca9" ContentHash="-MHBgWMeYEi7JnicHzubkw" CvTextArea="431, 207, 62, 19" CvTextArgument="Reports" CvType="Text" DesignTimeRectangle="427, 206, 66, 22" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='5' tag='TABLE' /&gt;&lt;webctrl name='PageHeaderControl_FunctionalSectionMenuControl_ReportsRolloverButton_img' tableRow='1' tag='IMG' /&gt;" Guid="f3d72a37-8ab4-4d62-9518-1d9def9e50c8" InformativeScreenshot="da603596cc14971e31fd6ceb12da7f95.png" Reference="PVqMZiPBo06dWQNQBpVvFw/ivFK3uXlA0Su9pn_ddveGw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PCL Plasma - Home' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="15, 146, 209, 92" ElementType="Icon" FullSelectorArgument="&lt;webctrl id='PageHeaderControl_tblHeader' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='PageHeaderControl_LogoImage' tableRow='1' tag='IMG' /&gt;" Guid="bd5cc1d1-6632-4216-8dda-2a24601716de" SearchSteps="Selector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Default'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484,227" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="991ea312-ae96-4ac2-aa0d-648a41641d80" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="pclpls.com/Reports/Reports.aspx" CVScreenId="a4ef67ad-2992-4a94-ba58-094f1f89ef5a" ContentHash="BPmxOyyVk0qbdIeEVV9XeQ" CvTextArea="310, 245, 43, 13" CvTextArgument="Default" CvType="Text" DesignTimeRectangle="312, 244, 40, 16" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='PageHeaderControl_ReportsSubMenuTable' tableRow='1' tag='TABLE' /&gt;&lt;webctrl aaname='Default' tableRow='1' tag='A' /&gt;" Guid="e0b2c893-f883-45b2-99a5-755734ab35e4" InformativeScreenshot="7db94a6de52fb7715b6cc83a8ec36830.png" Reference="PVqMZiPBo06dWQNQBpVvFw/hO3cHPR3UUqBxpzD7bSahg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PCL Plasma - Reports' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="a4ef67ad-2992-4a94-ba58-094f1f89ef5a" CvTextArea="431, 207, 63, 18" CvTextArgument="Reports" CvType="Text" DesignTimeRectangle="427, 206, 66, 22" ElementType="Icon" FullSelectorArgument="&lt;webctrl tableRow='5' tag='TABLE' /&gt;&lt;webctrl name='PageHeaderControl_FunctionalSectionMenuControl_ReportsRolloverButton_img' tableRow='1' tag='IMG' /&gt;" Guid="12618472-c293-4f23-9cb0-db1083122c5a" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484,227" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="991ea312-ae96-4ac2-aa0d-648a41641d80" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="pclpls.com/Reports/DefaultReport.aspx" CVScreenId="bad1e709-cf54-4266-b1bc-03f58cc54568" ContentHash="hYvx-XqC3kGpPDSBsnMW9w" CvElementArea="1825, 409, 66, 24" CvTextArea="1834, 414, 47, 12" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="1826, 411, 63, 20" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl idx='2' parentid='ContentPanel' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='IMG' /&gt;" Guid="cf32dac5-610c-47e3-b9aa-abba71bd9bd9" InformativeScreenshot="2f20c8f7f3620807a8badcb927b7a45b.png" Reference="PVqMZiPBo06dWQNQBpVvFw/lZQ-8RLh5EKPORh6529PXw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PCL Plasma - Reports - Default Report' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="bad1e709-cf54-4266-b1bc-03f58cc54568" CvTextArea="1431, 388, 58, 14" CvTextArgument="Sub-agent:" CvType="Text" DesignTimeRectangle="1432, 387, 57, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='ContentPanel' tag='TABLE' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl id='DefaultReportCriteriaControl_SubAgentLabel' type='' tag='SPAN' class='' aaname='Sub-agent:' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Sub-agent:' /&gt;" Guid="eb504771-2609-42ef-b790-9face8a35cea" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <ui:GetLastDownloadedFile FileResource="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" File="[PCLDefaultsReport]" sap:VirtualizedContainerService.HintSize="484,563" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1" IgnoreFiles="tmp,dwn">
+              <ui:GetLastDownloadedFile.Body>
+                <ActivityAction>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,278" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save to Excel'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="991ea312-ae96-4ac2-aa0d-648a41641d80" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="pclpls.com/Reports/DefaultReport.aspx" CVScreenId="d5b568e6-0561-4125-99fc-4c4acbcfa968" ContentHash="zVM34V5aiEilZcoGOSJelQ" CvTextArea="1165, 485, 54, 10" CvTextArgument="Save to Expel" CvType="Text" DesignTimeRectangle="1166, 485, 53, 11" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl idx='3' parentid='ContentPanel' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='DefaultReportDataControl_ReportsPrintSaveMenuControl_SaveToExcelHyperLink' tableRow='1' tag='A' /&gt;" Guid="8dc053c0-26f3-463e-a145-28dce57bdc59" InformativeScreenshot="9d4dc1b76b8489ccbdb4a09a284037fc.png" Reference="PVqMZiPBo06dWQNQBpVvFw/zYOLjCewP0yvUhZxM3RLtg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PCL Plasma - Reports - Default Report' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="d5b568e6-0561-4125-99fc-4c4acbcfa968" CvElementArea="1151, 437, 66, 23" CvTextArea="1161, 442, 46, 12" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="1153, 439, 63, 20" ElementType="Icon" FullSelectorArgument="&lt;webctrl idx='2' parentid='ContentPanel' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='IMG' /&gt;" Guid="895a206c-e136-4516-a571-4ff91b8be15b" SearchSteps="Selector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </ui:GetLastDownloadedFile.Body>
+            </ui:GetLastDownloadedFile>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Edge" ContentHash="_S1WAJjtEU2_0S5WEY5LXA" IconBase64="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" InformativeScreenshot="2018911eca555683ca2c970cc3ec419b.jpg" Reference="PVqMZiPBo06dWQNQBpVvFw/XOy_b_2FLUWpbdAzrZKGgw" Selector="&lt;html app='msedge.exe' title='pclpls.com/Auth/MFALogin.aspx?ReturnUrl=%2fdefault.aspx' /&gt;" Url="https://www.pclpls.com/Auth/MFALogin.aspx?ReturnUrl=%2fdefault.aspx" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

@@ -1,0 +1,6 @@
+{
+  "Name": "PRIAR WhatsApp",
+  "ProjectType": "Process",
+  "Description": "Send PRIAR Arrears messages via WhatsApp",
+  "MainFile": "Main.xaml"
+}

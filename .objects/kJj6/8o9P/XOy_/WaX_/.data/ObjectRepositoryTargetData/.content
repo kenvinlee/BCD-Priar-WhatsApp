@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="8mLP6ju3LUOdMEf2HZqTCQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="pclpls.com/Auth/Login.aspx" CVScreenId="76f46ed7-0822-4eae-b321-37cfc43db929" CvElementArea="128, 690, 220, 27" CvType="InputBox" DesignTimeRectangle="130, 692, 217, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='UserNameTextBox' type='text' tag='INPUT' class='' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="2495cd82-08ef-44c5-8ed7-04e1f654edde" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PCL Plasma - Login' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="76f46ed7-0822-4eae-b321-37cfc43db929" CvTextArea="129, 675, 44, 12" CvTextArgument="User ID:" CvType="Text" DesignTimeRectangle="130, 674, 43, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='UserNameLabel' type='' tag='SPAN' class='' aaname='User ID:' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='User ID:' /&gt;" Guid="28ee2376-72be-451c-9df2-b46be44dc939" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c97006cbe415fe88e9e4318ef470e4a9.png" xmlns="">0tMHoG2ouK0G1WzG23fjerw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

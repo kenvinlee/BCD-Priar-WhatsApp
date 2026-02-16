@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="hYvx-XqC3kGpPDSBsnMW9w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="pclpls.com/Reports/DefaultReport.aspx" CVScreenId="bad1e709-cf54-4266-b1bc-03f58cc54568" CvElementArea="1825, 409, 66, 24" CvTextArea="1834, 414, 47, 12" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="1826, 411, 63, 20" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl idx='2' parentid='ContentPanel' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='IMG' /&gt;" Guid="cf32dac5-610c-47e3-b9aa-abba71bd9bd9" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PCL Plasma - Reports - Default Report' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="bad1e709-cf54-4266-b1bc-03f58cc54568" CvTextArea="1431, 388, 58, 14" CvTextArgument="Sub-agent:" CvType="Text" DesignTimeRectangle="1432, 387, 57, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='ContentPanel' tag='TABLE' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl id='DefaultReportCriteriaControl_SubAgentLabel' type='' tag='SPAN' class='' aaname='Sub-agent:' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Sub-agent:' /&gt;" Guid="eb504771-2609-42ef-b790-9face8a35cea" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2f20c8f7f3620807a8badcb927b7a45b.png" xmlns="">040MbXWcfAkC_KasAnB_2-w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

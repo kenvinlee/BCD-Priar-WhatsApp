@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="iiqh3bKlUUqHMVBHOGKDSw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="pclpls.com/Auth/MFALogin.aspx" CVScreenId="2f651114-9c00-4e95-b070-275d87e52cf2" CvElementArea="792, 449, 353, 34" CvTextArea="876, 459, 183, 16" CvTextArgument="Sign in with PLaSMA User ID" CvType="Button" DesignTimeRectangle="793, 451, 350, 31" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='btnPlasmaLogin' tag='A' /&gt;" Guid="41a14a36-3012-4cac-a17b-8a2ccc9e0291" ScopeSelectorArgument="&lt;html app='msedge.exe' title='pclpls.com/Auth/MFALogin.aspx?ReturnUrl=%2fdefault.aspx' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="2f651114-9c00-4e95-b070-275d87e52cf2" CvTextArea="791, 353, 244, 23" CvTextArgument="Welcome to PLaSMA" CvType="Text" DesignTimeRectangle="793, 351, 350, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='' aaname='Welcome to PLaSMA' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Welcome to PLaSMA' /&gt;" Guid="23246374-99e9-493b-b8b3-d3de22c74b4b" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="272062b1895fdca1f08bb628419855ec.png" xmlns="">0ULSePT5jEEW6O-LzY6SSGA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

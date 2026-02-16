@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Sub-agent",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "lZQ-8RLh5EKPORh6529PXw",
+  "Reference": "PVqMZiPBo06dWQNQBpVvFw/lZQ-8RLh5EKPORh6529PXw",
+  "ParentRef": "PVqMZiPBo06dWQNQBpVvFw/XOy_b_2FLUWpbdAzrZKGgw",
+  "Created": "2026-02-13T14:01:54.7349466Z",
+  "Updated": "2026-02-13T14:01:54.7349466Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

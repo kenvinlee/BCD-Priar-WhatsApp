@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="BPmxOyyVk0qbdIeEVV9XeQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="pclpls.com/Reports/Reports.aspx" CVScreenId="a4ef67ad-2992-4a94-ba58-094f1f89ef5a" CvTextArea="310, 245, 43, 13" CvTextArgument="Default" CvType="Text" DesignTimeRectangle="312, 244, 40, 16" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='PageHeaderControl_ReportsSubMenuTable' tableRow='1' tag='TABLE' /&gt;&lt;webctrl aaname='Default' tableRow='1' tag='A' /&gt;" Guid="e0b2c893-f883-45b2-99a5-755734ab35e4" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PCL Plasma - Reports' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="a4ef67ad-2992-4a94-ba58-094f1f89ef5a" CvTextArea="431, 207, 63, 18" CvTextArgument="Reports" CvType="Text" DesignTimeRectangle="427, 206, 66, 22" ElementType="Icon" FullSelectorArgument="&lt;webctrl tableRow='5' tag='TABLE' /&gt;&lt;webctrl name='PageHeaderControl_FunctionalSectionMenuControl_ReportsRolloverButton_img' tableRow='1' tag='IMG' /&gt;" Guid="12618472-c293-4f23-9cb0-db1083122c5a" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7db94a6de52fb7715b6cc83a8ec36830.png" xmlns="">0XKfVmAjfc0WpR7K_EhqetQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

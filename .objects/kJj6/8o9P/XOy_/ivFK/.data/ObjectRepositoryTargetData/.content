@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-MHBgWMeYEi7JnicHzubkw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="pclpls.com" CVScreenId="be41762a-4053-4939-930b-066205ad9ca9" CvTextArea="431, 207, 62, 19" CvTextArgument="Reports" CvType="Text" DesignTimeRectangle="427, 206, 66, 22" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='5' tag='TABLE' /&gt;&lt;webctrl name='PageHeaderControl_FunctionalSectionMenuControl_ReportsRolloverButton_img' tableRow='1' tag='IMG' /&gt;" Guid="f3d72a37-8ab4-4d62-9518-1d9def9e50c8" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PCL Plasma - Home' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="15, 146, 209, 92" ElementType="Icon" FullSelectorArgument="&lt;webctrl id='PageHeaderControl_tblHeader' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='PageHeaderControl_LogoImage' tableRow='1' tag='IMG' /&gt;" Guid="bd5cc1d1-6632-4216-8dda-2a24601716de" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="da603596cc14971e31fd6ceb12da7f95.png" xmlns="">0dkQpljk7TU6nSPtvakyRRg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

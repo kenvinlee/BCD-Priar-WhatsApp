@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Sign in with PLaSMA Use…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "FxXYFqI58kK6MzPl1w5LEg",
+  "Reference": "PVqMZiPBo06dWQNQBpVvFw/FxXYFqI58kK6MzPl1w5LEg",
+  "ParentRef": "PVqMZiPBo06dWQNQBpVvFw/XOy_b_2FLUWpbdAzrZKGgw",
+  "Created": "2026-02-13T13:09:28.0376667Z",
+  "Updated": "2026-02-13T13:09:28.0376667Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

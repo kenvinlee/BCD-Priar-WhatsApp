@@ -42,6 +42,8 @@
       <x:String>UiPath.CSV</x:String>
       <x:String>UiPath.CSV.Activities</x:String>
       <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -92,10 +94,30 @@
       <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
       <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GetPCLDefaultsReport" sap:VirtualizedContainerService.HintSize="930,3264" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="GetPCLDefaultsReport" sap:VirtualizedContainerService.HintSize="930,3280" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="SecondRejectionChaserRows" />
+      <Variable x:TypeArguments="sd:DataTable" Name="FirstRejectionChaserRows" />
+      <Variable x:TypeArguments="sd:DataTable" Name="FilteredPCLDefaultReportDT" />
       <Variable x:TypeArguments="sd:DataTable" Name="PCLDefaultReportDT" />
       <Variable x:TypeArguments="upr:IResource" Name="DefaultsReportCSV" />
       <Variable x:TypeArguments="x:String" Name="PCLUsername" />
@@ -309,7 +331,36 @@
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
     <ui:ReadCsvFile FilePath="{x:Null}" DataTable="[PCLDefaultReportDT]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Read CSV" sap:VirtualizedContainerService.HintSize="552,170" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" PathResource="[LocalResource.FromPath(PCLDefaultsReport.FullName)]" />
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="552,123" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="PCLDefaultsReport read into DT" />
-    <ui:FilterDataTable DataTable="{x:Null}" Filters="{x:Null}" OutputDataTable="{x:Null}" SelectColumns="{x:Null}" DisplayName="Filter Data Table" sap:VirtualizedContainerService.HintSize="552,186" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" SelectColumnsMode="Remove" />
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="552,211" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+      <ui:MultipleAssign.AssignOperations>
+        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="sd:DataTable">[FilteredPCLDefaultReportDT]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="sd:DataTable">[PCLDefaultReportDT.Select("Not [Payment Status] = 'Agreement Cancelled'").CopyToDataTable]</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="sd:DataTable">[FirstRejectionChaserRows]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="sd:DataTable">[FilteredPCLDefaultReportDT.Select("[AttemptNumber] = '1'").CopyToDataTable]</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="sd:DataTable">[SecondRejectionChaserRows]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="sd:DataTable">[FilteredPCLDefaultReportDT.Select("Not [AttemptNumber] = '1'").CopyToDataTable]</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+        </scg:List>
+      </ui:MultipleAssign.AssignOperations>
+    </ui:MultipleAssign>
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="552,114" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="PCLDefaultsReport read into DT" />
   </Sequence>
 </Activity>

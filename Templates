@@ -1,0 +1,14 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:open="www.opengi.co.uk">
+<soapenv:Header/>
+<soapenv:Body>
+<open:processMessage>
+<messageType>OICXS</messageType>
+<branch>3</branch>
+<marsReference>LLOY010</marsReference>
+<bNumber>Z00240</bNumber>
+<licenceKey>YNNRT5CJJ</licenceKey>
+<xmlSubmission> <xmlexecute> <job> <branch>3</branch> </job> <parameters> <yzt> <char20.1>update-broomsrisk</char20.1> </yzt> </parameters> <broomsdata> <broomsclient> <bcm> <refno>REPLACECLIREF</refno> </bcm> </broomsclient> <broomspolicy> <bpy> <refno>REPLACEPOLREF</refno> </bpy> REPLACERPA1 </broomspolicy> </broomsdata> </xmlexecute> </xmlSubmission>
+<timeout>0</timeout>
+</open:processMessage>
+</soapenv:Body>
+</soapenv:Envelope>

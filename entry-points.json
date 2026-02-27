@@ -4,7 +4,71 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "830f34b5-3a34-47b6-9cd9-eb8abed4e07a",
-      "type": "process"
+      "type": "process",
+      "input": {
+        "type": "object",
+        "properties": {
+          "DTSecondChaserPCL": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "DTFirstChaserPCL": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "DTOver5kDDM": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "DTUnder5kDDM": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        },
+        "required": [
+          "DTSecondChaserPCL",
+          "DTFirstChaserPCL",
+          "DTOver5kDDM",
+          "DTUnder5kDDM"
+        ]
+      },
+      "output": {
+        "type": "object",
+        "properties": {
+          "DTSecondChaserPCL": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "DTFirstChaserPCL": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "DTOver5kDDM": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "DTUnder5kDDM": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      }
     }
   ]
 }

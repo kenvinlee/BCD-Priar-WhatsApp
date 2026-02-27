@@ -108,7 +108,7 @@
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SendMessages" sap:VirtualizedContainerService.HintSize="1570,5448" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SendMessages" sap:VirtualizedContainerService.HintSize="1570,5426" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Num1">
         <Variable.Default>
@@ -139,7 +139,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="520,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;START RPA1 Frame Creation&quot;]" />
-    <Sequence DisplayName="Prepare the XML" sap:VirtualizedContainerService.HintSize="520,788" sap2010:WorkflowViewState.IdRef="Sequence_7">
+    <Sequence DisplayName="Prepare the XML" sap:VirtualizedContainerService.HintSize="520,766" sap2010:WorkflowViewState.IdRef="Sequence_7">
       <Sequence.Variables>
         <Variable x:TypeArguments="upr:ILocalResource" Name="RPA1FrameXMLFile" />
         <Variable x:TypeArguments="upr:ILocalResource" Name="RPA1FrameTopXMLFile" />
@@ -158,8 +158,8 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ucas:DownloadStorageFile>
-      <ui:ReadTextFile FileName="{x:Null}" Content="[RPA1FrameText]" DisplayName="Read Text File" File="[RPA1FrameXMLFile]" sap:VirtualizedContainerService.HintSize="416,124" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
-      <ui:ReadTextFile FileName="{x:Null}" Content="[RPA1FrameTopText]" DisplayName="Read Text File" File="[RPA1FrameTopXMLFile]" sap:VirtualizedContainerService.HintSize="416,124" sap2010:WorkflowViewState.IdRef="ReadTextFile_2" />
+      <ui:ReadTextFile FileName="{x:Null}" Content="[RPA1FrameText]" DisplayName="Read Text File" File="[RPA1FrameXMLFile]" sap:VirtualizedContainerService.HintSize="416,113" sap2010:WorkflowViewState.IdRef="ReadTextFile_5" />
+      <ui:ReadTextFile FileName="{x:Null}" Content="[RPA1FrameTopText]" DisplayName="Read Text File" File="[RPA1FrameTopXMLFile]" sap:VirtualizedContainerService.HintSize="416,113" sap2010:WorkflowViewState.IdRef="ReadTextFile_6" />
       <ui:DeserializeXml DisplayName="Deserialize XML" sap:VirtualizedContainerService.HintSize="416,83" sap2010:WorkflowViewState.IdRef="DeserializeXml_1" XMLDocument="[RPA1FrameXml]" XMLString="[RPA1FrameText]" />
     </Sequence>
     <Assign sap:VirtualizedContainerService.HintSize="520,175" sap2010:WorkflowViewState.IdRef="Assign_3">
@@ -170,7 +170,7 @@
         <InArgument x:TypeArguments="x:String">["RPA PRIAR"]</InArgument>
       </Assign.Value>
     </Assign>
-    <Sequence DisplayName="Create XML" sap:VirtualizedContainerService.HintSize="520,1932" sap2010:WorkflowViewState.IdRef="Sequence_9">
+    <Sequence DisplayName="Create XML" sap:VirtualizedContainerService.HintSize="520,1964" sap2010:WorkflowViewState.IdRef="Sequence_9">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Int32" Name="statusCode" />
         <Variable x:TypeArguments="x:String" Name="apiResponse" />
@@ -343,8 +343,8 @@
           <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
         </ui:HttpClient.UrlSegments>
       </ui:HttpClient>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,175" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;API Status Code: &quot;+ statusCode.ToString]" />
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,166" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;API Response &quot;+ apiResponse]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;API Response &quot;+ apiResponse]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,166" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;API Status Code: &quot;+ statusCode.ToString]" />
     </Sequence>
     <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DTFirstChaserPCL]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="520,583" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
